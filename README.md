@@ -9,7 +9,6 @@ Este proyecto es una página web demostrativa desarrollada como parte de la Pre-
 - Estilos CSS externos con Google Fonts y propiedades de background.
 - Diseño responsivo utilizando Flexbox y Grid.
 - Inclusión de contenido multimedia (imágenes) y navegación interna.
-
 ---
 
 ## Estructura de Archivos
@@ -43,7 +42,7 @@ Para que funcione correctamente, reemplazar `tuformid` en el atributo `action` d
 
 ```html
 <form action="https://formspree.io/f/tuformid" method="POST">
-
+<a href="https://preentregafronendivanacurra.netlify.app/">URL Netlify</a>
 
 ---
 
