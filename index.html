@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Pre-Entrega</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Mi Proyecto Integrador</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#resenas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio">
+            <h2>Bienvenidos</h2>
+            <p>Este es un proyecto demostrativo que integra HTML, CSS y contenido multimedia.</p>
+            <img src="https://via.placeholder.com/600x300" alt="Imagen de ejemplo">
+        </section>
+
+        <!-- Sección Productos -->
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="productos-container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p>Descripción breve del producto.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p>Descripción breve del producto.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Producto 3">
+                    <h3>Producto 3</h3>
+                    <p>Descripción breve del producto.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Reseñas -->
+        <section id="resenas">
+            <h2>Reseñas</h2>
+            <div class="resenas-grid">
+                <div class="resena">
+                    <p>"Excelente producto!"</p>
+                    <span>- Cliente 1</span>
+                </div>
+                <div class="resena">
+                    <p>"Muy recomendable."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena">
+                    <p>"Calidad y servicio impecables."</p>
+                    <span>- Cliente 3</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/tuformid" id="formulario" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="_replyto" placeholder="Ingrese su correo electrónico" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Ingrese su mensaje" required></textarea>
+                 <div id="mensaje-error" class="error"></div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mi Proyecto Integrador. Todos los derechos reservados.</p>
+    </footer>
+
+      <script src="emailvalidation.js"></script>
+</body>
+</html>
