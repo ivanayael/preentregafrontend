@@ -3,136 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Tienda Huevo</title>
+    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <h1 class="site-title">Tienda Huevo</h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#resenas">Reseñas</a></li>
-                    <li><a href="#contactos">Contactos</a></li>
-                </ul>
-            </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">
+          <!-- Iconografía: huevo estilizado -->
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <ellipse cx="32" cy="34" rx="20" ry="24" fill="#fff" />
+            <ellipse cx="32" cy="28" rx="14" ry="16" fill="#fef3c7" opacity="0.9" />
+            <circle cx="40" cy="20" r="3" fill="#fbcfe8" opacity="0.6"/>
+          </svg>
+        </span>
+        <span class="site-title">Tienda Huevo</span>
+      </div>
+      <nav class="main-nav" aria-label="Menú principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contactos">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="inicio" class="hero">
+      <div class="grid">
+        <div>
+          <h2>Bienvenido a Tienda Huevo</h2>
+          <p>Figuras coleccionables y artículos de cultura pop — selección cuidada y envíos a todo el país.</p>
+          <div class="cta">
+            <a class="btn primary" href="#productos">Ver Productos</a>
+            <a class="btn secondary" href="#contactos">Contacto</a>
+          </div>
         </div>
-    </header>
+        <figure>
+          <img src="assets/img/hero-image.jpg" alt="Imagen principal tienda" loading="lazy">
+          <figcaption class="caption">Debajo el huevo, la mejor experiencia</figcaption>
+        </figure>
+      </div>
+    </section>
 
-    <main>
-        <section id="inicio" class="hero">
-            <div class="container">
-                <h2 class="brand">Bienvenido a Tienda Huevo</h2>
-                <p>Explora nuestros productos</p>
-                <figure>
-                    <img src="assets/img/hero-image.jpg" alt="Imagen Principal">
-                    <figcaption>Debajo el huevo, la mejor experiencia</figcaption> 
-                </figure>
-                <a href="#productos" class="btn">Ver Productos</a>
-            </div>
-        </section>
+    <section id="productos" class="productos">
+      <h2>Productos Destacados</h2>
+      <div class="productos-grid">
 
-        <section id="productos" class="productos container">
-            <h2>Productos Destacados</h2>
-                <div class="productos-grid">
-                    <!-- Card 1 -->
-                    <article class="card">
-                        <img src="assets/img/producto_01.webp" alt="Producto 1">
-                        <h3>Figura de Card Captor Sakura</h3>
-                        <p>Descripción del producto 1.</p>
-                        <button class="btn">Ver</button>
-                    </article>
-                     <!-- Card 2-->
-                    <article class="card">
-                        <img src="assets/img/producto_02.webp" alt="Producto 3">
-                        <h3>Figura de PacMan</h3>
-                        <p>Descripción del producto 2.</p>
-                        <button class="btn">Ver</button>
-                    </article>
-                     <!-- Card 3 -->
-                    <article class="card">
-                        <img src="assets/img/producto_03.webp" alt="Producto 3">
-                        <h3>Figura de Sonic</h3>
-                        <p>Descripción del producto 3.</p>
-                        <button class="btn">Ver</button>
-                    </article>
-                </div>
-            </div>
-        </section>
+        <!-- Producto 1 -->
+        <article class="card">
+          <a class="thumb" href="https://www.mercadolibre.com.ar/figura-sakura-kinomoto--sakura-card-captor-15cm-importado/up/MLAU243265426#polycard_client=search-nordic&search_layout=grid&position=3&type=product&tracking_id=9c7d6feb-ffe0-4a9d-9c92-266cf6fe9f7f&wid=MLA1322203417&sid=search" target="_blank" rel="noopener">
+            <img src="assets/img/producto_01.webp" alt="Figura Sakura" loading="lazy">
+          </a>
+          <h3>Figura de Card Captor Sakura — 15cm</h3>
+          <p>Figura importada, detalle pintado a mano, ideal para coleccionistas.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://www.mercadolibre.com.ar/figura-sakura-kinomoto--sakura-card-captor-15cm-importado/up/MLAU243265426#polycard_client=search-nordic&search_layout=grid&position=3&type=product&tracking_id=9c7d6feb-ffe0-4a9d-9c92-266cf6fe9f7f&wid=MLA1322203417&sid=search" target="_blank" rel="noopener">Comprar en MercadoLibre</a>
+          </div>
+        </article>
 
-       <section id="resenas" class="resenas container">
-            <h2>Reseñas</h2>
-            <div class="resenas-grid">
-                <article class="resena">
-                    <p class="texto">"Excelente servicio y producto"</p>
-                    <p class="autor">— Cliente A</p>
-                </article>
-                <article class="resena">
-                    <p class="texto">"Muy satisfecha con la compra"</p>
-                    <p class="autor">— Cliente B</p>
-                </article>
-                <article class="resena">
-                    <p class="texto">"Entrega rápida y atención amable"</p>
-                    <p class="autor">— Cliente C</p>
-                </article>
-                <article class="resena">
-                    <p class="texto">"Calidad superior"</p>
-                    <p class="autor">— Cliente D</p>
-                </article>
-            </div>
-        </section>
+        <!-- Producto 2 -->
+        <article class="card">
+          <a class="thumb" href="https://www.mercadolibre.com.ar/pack-figuras-pacman-4-fantasmas-6cm-impresion-3d-makeme/p/MLA51919720#polycard_client=search-nordic&search_layout=stack&position=4&type=product&tracking_id=791765cf-8d67-4533-812f-abf33a866533&wid=MLA2152209646&sid=search" target="_blank" rel="noopener">
+            <img src="assets/img/producto_02.webp" alt="Pack Pacman" loading="lazy">
+          </a>
+          <h3>Pack Figuras PacMan — 6cm</h3>
+          <p>Pack de cuatro fantasmas impresos en 3D, excelente para dioramas y regalos.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://www.mercadolibre.com.ar/pack-figuras-pacman-4-fantasmas-6cm-impresion-3d-makeme/p/MLA51919720#polycard_client=search-nordic&search_layout=stack&position=4&type=product&tracking_id=791765cf-8d67-4533-812f-abf33a866533&wid=MLA2152209646&sid=search" target="_blank" rel="noopener">Comprar en MercadoLibre</a>
+          </div>
+        </article>
 
-        <section id="multimedia" class="multimedia container">
-        <h2>Multimedia</h2>
-            <div class="media-row">
-                <video controls width="480">
-                <source src="assets/video/demo.mp4" type="video/mp4">
-                Su navegador no soporta la etiqueta video.
-                </video>
-                <iframe width="480" height="270" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video ejemplo" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </section>
+        <!-- Producto 3 -->
+        <article class="card">
+          <a class="thumb" href="https://www.mercadolibre.com.ar/sonic-the-hedgehog-2-sonic-con-mapa-9cm-jakks-pacific/p/MLA21022270#polycard_client=search-nordic&search_layout=stack&position=10&type=product&tracking_id=9b6fdb15-cf17-4c23-b33c-6c06986e0259&wid=MLA1381160361&sid=search" target="_blank" rel="noopener">
+            <img src="assets/img/producto_03.webp" alt="Figura Sonic" loading="lazy">
+          </a>
+          <h3>Sonic — Figura 9cm</h3>
+          <p>Figura oficial, pose dinámica y acabado resistente al desgaste.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://www.mercadolibre.com.ar/sonic-the-hedgehog-2-sonic-con-mapa-9cm-jakks-pacific/p/MLA21022270#polycard_client=search-nordic&search_layout=stack&position=10&type=product&tracking_id=9b6fdb15-cf17-4c23-b33c-6c06986e0259&wid=MLA1381160361&sid=search" target="_blank" rel="noopener">Comprar en MercadoLibre</a>
+          </div>
+        </article>
 
-      <section id="contacto" class="contacto container">
-        <h2>Contacto</h2>
-            <form action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST" class="contact-form">
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="name" type="text" required>
+      </div>
+    </section>
 
-            <label for="email">Correo electrónico</label>
-            <input id="email" name="email" type="email" required>
+    <section id="resenas" class="resenas">
+      <h2>Reseñas</h2>
+      <div class="resenas-grid">
+        <article class="resena">
+          <div class="meta"><div class="autor">María G.</div><div class="stars">★★★★★</div></div>
+          <p class="texto">Excelente atención al cliente. La figura llegó en perfecto estado y el empaque es muy profesional.</p>
+        </article>
+        <article class="resena">
+          <div class="meta"><div class="autor">Carlos P.</div><div class="stars">★★★★☆</div></div>
+          <p class="texto">Muy conforme con la calidad. El envío tardó lo previsto y la comunicación fue correcta.</p>
+        </article>
+        <article class="resena">
+          <div class="meta"><div class="autor">Lucía R.</div><div class="stars">★★★★★</div></div>
+          <p class="texto">Recomendado para coleccionistas. Los detalles pintados son excelentes.</p>
+        </article>
+        <article class="resena">
+          <div class="meta"><div class="autor">Federico M.</div><div class="stars">★★★★☆</div></div>
+          <p class="texto">Buena experiencia general. Atención rápida y producto tal como se describía.</p>
+        </article>
+      </div>
+    </section>
 
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="message" rows="6" required></textarea>
+    <section id="multimedia" class="multimedia">
+      <h2>Multimedia</h2>
+      <div class="multimedia-flex">
+        <video controls width="480" class="multimedia-video">
+          <source src="assets/video/demo.mp4" type="video/mp4">
+          Su navegador no soporta video.
+        </video>
+        <iframe width="480" height="270" src="https://www.youtube.com/embed/ffyMH5k49hY?si=bvKUvt2X8HEN5zvS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="multimedia-iframe"></iframe>
+      </div>
+    </section>
 
+    <section id="contactos" class="contacto">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/f/xeorepkn" method="POST" class="contact-form" target="_blank">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="name" type="text" required>
 
-            <!-- Spam honeypot optional -->
-            <input type="text" name="_honeypot" title="Por favor, no rellenar" placeholder="No completar" class="honeypot" aria-hidden="true" />
+        <label for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" required>
 
-            <!-- Redirect after submit (opcional) -->
-            <input type="hidden" name="_next" value="/gracias.html">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="message" rows="6" required></textarea>
 
-            <button type="submit" class="btn primary">Enviar</button>
-            </form>
-        </section>
-    </main>
+        <!-- Honeypot (oculto) -->
+        <input type="text" name="_honeypot" class="honeypot" tabindex="-1" autocomplete="off" title="No completar este campo" placeholder="No completar este campo">
+        <!-- Respuesta automática a correo -->
+        <input type="hidden" name="_replyto" value="">
+        <!-- Redirigir después del envío (asegúrese que la ruta exista) -->
+        <input type="hidden" name="_next" value="/gracias.html">
 
+        <button type="submit" class="btn primary center">Enviar</button>
+      </form>
+    </section>
 
-    <footer class="site-footer">
-        <div class="container">
-            <p>© 2025 Tienda de Ejemplo. Todos los derechos reservados.</p>
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="#">Política de privacidad</a></li>
-                    <li><a href="#">Términos</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="store-info">
+        <strong>Mercat Villa Crespo — Tienda colaboradora</strong>
+        <p>Mercat Villa Crespo es un espacio gastronómico y cultural en Villa Crespo que además ofrece artículos de colección y cultura pop.</p>
+        <p>Dirección estimada: Thames 747, Villa Crespo, CABA. Horarios: martes-miércoles 11:00–20:00; jueves-domingo 11:00–23:00; viernes-sábado 11:00–01:00 (según fuentes públicas).</p>
+        <p><a href="https://mercatmercado.com/" target="_blank" rel="noopener">Visitar sitio de Mercat</a></p>
+      </div>
+      <div class="footer-right">
+        <p>© 2025 Tienda Huevo. Creada por Ivana Yael Currá para la cursada de Front-End de Talento Tech. Todos los derechos reservados.</p>
+        <nav class="footer-nav">
+          <a href="/privacidad.html">Política de privacidad</a> |
+          <a href="/terminos.html">Términos</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

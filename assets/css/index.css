@@ -1,0 +1,384 @@
+:root{
+--bg:#f8fafc;
+--accent:#0f1724;
+--muted:#6b7280;
+--card:#ffffff;
+--brand:#0ea5a4;
+--radius:12px;
+--shadow:0 8px 24px rgba(16,24,40,0.08);
+--max-w:1100px;
+--gap:1rem;
+font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;
+background:linear-gradient(180deg,#e6f7fb,var(--bg));
+color:var(--accent);
+line-height:1.5;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+font-family:Inter, sans-serif;
+}
+
+
+.container{
+  max-width:var(--max-w);
+  width:100%;
+  padding:1.25rem;
+  margin:1rem auto;
+  background:transparent
+
+}
+
+
+/* Header */
+.site-header{
+  position:sticky;
+  top:0;
+  width:100%;
+  -webkit-backdrop-filter:blur(6px);
+  backdrop-filter:blur(6px);
+  background:rgba(255,255,255,0.7);
+  border-bottom:1px solid #eef2f7
+}
+.header-inner{
+  display:flex;
+  justify-content:
+  space-between;
+  align-items:center;
+  gap:1rem;
+  max-width:var(--max-w);
+  margin:0 auto;
+  padding:.75rem 1rem
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+  font-weight:700;
+  font-family:'Roboto Slab',serif;
+  color:var(--accent)
+}
+
+.brand .logo{
+  width:44px;
+  height:44px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:linear-gradient(180deg,var(--brand),#0b7285);
+  box-shadow:var(--shadow);
+  color:#fff;
+  flex-shrink:0
+}
+
+
+.brand .logo svg{
+  width:26px;
+  height:26px;
+  display:block
+}
+.site-title{
+  font-size:1.05rem
+}
+
+
+nav.main-nav ul{
+  display:flex;
+  gap:0.5rem;
+  list-style:none;
+  margin:0;
+  padding:0
+}
+nav.main-nav a{
+  display:inline-block;
+  padding:.45rem .8rem;
+  border-radius:8px;
+  text-decoration:none;
+  color:var(--accent);
+  font-weight:600
+}
+
+nav.main-nav a:hover{
+  background:var(--brand);
+  color:#fff
+}
+
+/* Hero section */
+.hero{
+  padding:2rem 0
+}
+.hero .grid{
+  display:grid;
+  grid-template-columns:1fr 420px;
+  gap:1.25rem;
+  align-items:center
+}
+
+.hero h2{
+  font-family:'Roboto Slab',serif;
+  font-size:1.8rem;
+  margin:0
+}
+.hero p{
+  color:var(--muted)
+}
+.hero figure{
+  margin:0
+}
+
+.hero img{
+  width:100%;
+  height:auto;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+  object-fit:cover;
+  aspect-ratio:16/9
+}
+.hero .cta{
+  display:flex;
+  gap:.75rem;
+  flex-wrap:wrap
+}
+.hero .caption{
+  text-align:center;
+  color:var(--muted);
+  font-size:.95rem;
+  margin-top:.5rem
+}
+
+
+/* Botones unificados y centrados */
+.btn{
+  display:inline-block;
+  padding:.65rem 1rem;
+  border-radius:10px;
+  font-weight:700;
+  border:0;
+  cursor:pointer;
+  text-align:center;
+  text-decoration:none
+}
+
+.btn.primary{
+  background:var(--brand);
+  color:#fff
+}
+.btn.secondary{
+  background:#eef2f7;
+  color:var(--accent)
+}
+
+.btn.center{
+  margin:0 auto;
+  display:block;
+  max-width:260px
+}
+
+/* Productos */
+.productos h2{
+  text-align:center;
+  margin-bottom:1rem;
+  font-family:'Roboto Slab',serif
+}
+
+.productos-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1rem;
+  justify-content:center
+}
+
+.card{
+  background:var(--card);
+  padding:1rem;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  flex:1 1 260px;
+  max-width:300px;
+  min-width:220px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:.6rem;
+  border:1px solid #eef2f7
+}
+
+/* Multimedia */
+.multimedia { 
+  margin-top: 1.25rem; 
+}
+.multimedia-flex {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.multimedia-video {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+.multimedia-video {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+/* Mejora en las imágenes: contenedor con ratio y lazy-loading */
+.card .thumb{
+  width:100%;
+  aspect-ratio:1/1;
+  border-radius:8px;
+  overflow:hidden;
+  display:block
+}
+.card .thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .35s
+}
+
+.card .thumb img:hover{transform:scale(1.03)}
+
+
+.card h3{
+  margin:.25rem 0;
+  font-size:1.05rem
+}
+.card p{
+  color:var(--muted);
+  font-size:.95rem;
+  text-align:center
+}
+.card .actions{
+  width:100%;
+  display:flex;
+  gap:.5rem
+}
+.card .actions a{
+  flex:1
+}
+
+
+/* Reseñas mejoradas */
+.resenas h2{
+  text-align:center;
+  margin-bottom:1rem;
+  font-family:'Roboto Slab',serif
+}
+
+.resenas-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:1rem
+}
+
+.resena{
+  background:var(--card);
+  padding:1rem;
+  border-radius:10px;
+  border:1px solid #eef2f7;
+  box-shadow:var(--shadow);
+  display:flex;
+  flex-direction:column;
+  gap:.5rem
+}
+
+.resena .meta{
+  display:flex;
+  justify-content:
+  space-between;
+  align-items:center
+}
+
+.resena .autor{
+  font-weight:700
+}
+
+.stars{
+  color:goldenrod
+}
+
+
+/* Contacto */
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  gap:.75rem;
+  max-width:640px
+}
+.contact-form button{
+  align-self:flex-start
+}
+
+.contact-form input,.contact-form textarea
+{
+  padding:.6rem;
+  border:1px solid #d1d5db;
+  border-radius:8px
+}
+
+.contact-form label{
+  font-weight:600
+}
+.honeypot{
+  display:none
+}
+.contacto {
+    margin-top: 1.25rem;
+}
+
+
+/* Footer */
+.site-footer{
+  width:100%;
+  background:#fff;
+  border-top:1px solid #e6e9ef;
+  margin-top:2rem;
+  padding:1.25rem 0;
+  box-shadow:var(--shadow)
+}
+
+.footer-grid{
+  display:flex;
+  gap:1rem;
+  align-items:flex-start;
+  justify-content:space-between;
+  flex-wrap:wrap
+}
+.store-info p{
+  margin:.25rem 0;
+  color:var(--muted)
+}
+
+.footer-right {
+  text-align: right;
+  min-width: 220px;
+}
+
+/* Responsive */
+@media(max-width:860px)
+{
+  .hero .grid{
+  grid-template-columns:1fr
+}
+
+.resenas-grid{
+  grid-template-columns:1fr
+}
+.header-inner{
+  padding:.5rem 1rem
+}
+.productos-grid{
+  justify-content:center
+}
+}

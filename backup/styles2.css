@@ -6,6 +6,9 @@
     --card:#ffffff;
     --radius:12px;
     font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    font-size:16px;
+    scroll-behavior:smooth
+
 }
     *{
         box-sizing:border-box;
@@ -428,7 +431,7 @@
     font-size:.95rem
 }
 
-.contact-form button
+.contact-form .btn
 {
     background:#0ea5a4;
     color:white;
@@ -442,11 +445,11 @@
     align-self:flex-start
 }
 
-.contact-form button:hover
+.contact-form .btn:hover
 {
     background:#0b7285
 }
-.contact-form button:focus
+.contact-form .btn:focus
 {
     outline:2px solid #0b7285;
     outline-offset:2px
